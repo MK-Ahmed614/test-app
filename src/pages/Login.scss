@@ -1,0 +1,322 @@
+@import "../components/variables/Variables.module.scss";
+@import "../components/variables/main-use_module.scss";
+
+.login-wrapper {
+  background-color: $whiteBackground;
+  padding: 80px 0;
+  .login-box {
+    box-shadow: $shadowBox;
+    background-color: white;
+    margin: 0 auto;
+    width: 400px;
+    padding: 25px;
+    border-radius: 6px;
+    text-transform: capitalize;
+    h4 {
+      text-align: center;
+      font-size: 16px;
+      color: #777;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      .form-control {
+        border: none;
+        background-color: #eee;
+        font-size: 13px;
+        height: calc(1.7em + 0.75rem + 2px);
+        &:focus {
+          box-shadow: none;
+        }
+        &::placeholder {
+          text-transform: capitalize;
+        }
+      }
+    }
+    .forgotPassword {
+      margin-bottom: 20px;
+      a {
+        font-size: 12px;
+        color: #444;
+        font-weight: 500;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+          color: #333;
+        }
+      }
+    }
+    .login-buttons {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .btn {
+        margin: 0 5px;
+        background-color: $BackgorundColor;
+        color: white;
+        cursor: pointer;
+        width: 85px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px;
+        font-size: 12px;
+        transition: all 0.2s ease-in-out;
+        text-transform: capitalize;
+        border: transparent;
+        font-weight: 500;
+        opacity: 0.9;
+        &:hover {
+          background-color: $OrBackground;
+          color: #131921;
+          opacity: 1;
+        }
+      }
+      a {
+        background-color: $OrBackground !important;
+        color: #000 !important;
+        &:hover {
+          background-color: $BackgorundColor !important;
+          color: white !important;
+        }
+      }
+    }
+  }
+}
+
+///// Forgot Password Part
+
+.forgot-password-wrapper {
+  background-color: $whiteBackground;
+  padding: 80px 0;
+  .forgot-password-box {
+    box-shadow: $shadowBox;
+    background-color: white;
+    margin: 0 auto;
+    width: 400px;
+    padding: 25px;
+    border-radius: 6px;
+    text-transform: capitalize;
+    h4 {
+      text-align: center;
+      font-size: 16px;
+      color: #777;
+      margin-bottom: 0;
+    }
+
+    p {
+      margin: 10px 0;
+      font-size: 12px;
+      color: #777;
+      text-align: center;
+      text-transform: lowercase;
+    }
+
+    .form-group {
+      .form-control {
+        border: none;
+        background-color: #eee;
+        font-size: 13px;
+        height: calc(1.7em + 0.75rem + 2px);
+        &:focus {
+          box-shadow: none;
+        }
+        &::placeholder {
+          text-transform: capitalize;
+        }
+      }
+    }
+
+    .forgot-password-buttons {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      .btn {
+        margin: 5px 0;
+        background-color: $BackgorundColor;
+        color: white;
+        cursor: pointer;
+        width: 85px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px;
+        font-size: 12px;
+        transition: all 0.2s ease-in-out;
+        text-transform: capitalize;
+        border: transparent;
+        font-weight: 500;
+        opacity: 0.9;
+        &:hover {
+          background-color: $OrBackground;
+          color: #131921;
+          opacity: 1;
+        }
+      }
+      a {
+        background: none !important;
+        color: #000 !important;
+      }
+    }
+  }
+}
+
+///// Forgot Password Part End Here
+
+///// Signup Part
+
+.signup-wrapper {
+  background-color: $whiteBackground;
+  padding: 80px 0;
+  .signup-box {
+    box-shadow: $shadowBox;
+    background-color: white;
+    margin: 0 auto;
+    width: 400px;
+    padding: 25px;
+    border-radius: 6px;
+    text-transform: capitalize;
+    h4 {
+      text-align: center;
+      font-size: 16px;
+      color: #777;
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin: 10px 0;
+      font-size: 12px;
+      color: #777;
+      text-align: center;
+      text-transform: lowercase;
+    }
+
+    .form-group {
+      .form-control {
+        border: none;
+        background-color: #eee;
+        font-size: 13px;
+        height: calc(1.7em + 0.75rem + 2px);
+        &:focus {
+          box-shadow: none;
+        }
+        &::placeholder {
+          text-transform: capitalize;
+        }
+      }
+    }
+
+    .signup-buttons {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 20px;
+      .btn {
+        background-color: $BackgorundColor;
+        color: white;
+        cursor: pointer;
+        width: 85px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px;
+        font-size: 12px;
+        transition: all 0.2s ease-in-out;
+        text-transform: capitalize;
+        border: transparent;
+        font-weight: 500;
+        opacity: 0.9;
+        &:hover {
+          background-color: $OrBackground;
+          color: #131921;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+///// Signup Part End Here
+
+///// Reset Password Part
+
+.resetPassword-wrapper {
+  background-color: $whiteBackground;
+  padding: 80px 0;
+  .resetPassword-box {
+    box-shadow: $shadowBox;
+    background-color: white;
+    margin: 0 auto;
+    width: 400px;
+    padding: 25px;
+    border-radius: 6px;
+    text-transform: capitalize;
+    h4 {
+      text-align: center;
+      font-size: 16px;
+      color: #777;
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin: 10px 0;
+      font-size: 12px;
+      color: #777;
+      text-align: center;
+      text-transform: lowercase;
+    }
+
+    .form-group {
+      .form-control {
+        border: none;
+        background-color: #eee;
+        font-size: 13px;
+        height: calc(1.7em + 0.75rem + 2px);
+        &:focus {
+          box-shadow: none;
+        }
+        &::placeholder {
+          text-transform: capitalize;
+        }
+      }
+    }
+
+    .resetPassword-buttons {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 20px;
+      .btn {
+        background-color: $BackgorundColor;
+        color: white;
+        cursor: pointer;
+        width: 85px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px;
+        font-size: 12px;
+        transition: all 0.2s ease-in-out;
+        text-transform: capitalize;
+        border: transparent;
+        font-weight: 500;
+        opacity: 0.9;
+        &:hover {
+          background-color: $OrBackground;
+          color: #131921;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+///// Reset Password Part End Here

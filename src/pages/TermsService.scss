@@ -1,0 +1,12 @@
+@import "../components/variables/Variables.module.scss";
+
+.TermsService-wrapper {
+  background-color: $whiteBackground;
+  padding: $mainPadding;
+  .TermsService-box {
+    padding: 15px;
+    background-color: white;
+    box-shadow: $shadowBox;
+    border-radius: 6px;
+  }
+}

@@ -1,0 +1,156 @@
+@import "./variables/Variables.module.scss";
+
+////// Header Part
+
+.header-top-strip {
+  background-color: $BackgorundColor;
+  text-transform: capitalize;
+  border-bottom: 1px solid $BorderColor;
+  p {
+    color: white;
+    margin: 0;
+    font-size: $paragraphFontSize;
+  }
+}
+
+.header-upper {
+  color: white;
+  background-color: $BackgorundColor;
+
+  .digitic {
+    text-transform: capitalize;
+    margin: 0;
+  }
+
+  .form-control:focus {
+    box-shadow: none;
+    border-color: inherit;
+  }
+
+  .form-control {
+    height: calc(1.2em + 0.75rem + 2px);
+  }
+
+  .form-control::placeholder {
+    font-size: 14px;
+  }
+
+  .input-group-append {
+    .input-group-text {
+      background-color: $OrBackground;
+      color: $BackgorundColor;
+      border: none;
+    }
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .header-upper-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .c-text {
+      display: flex;
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        :hover {
+          text-decoration: none !important;
+        }
+
+        img {
+          width: 30px;
+          height: 30px;
+        }
+
+        p {
+          color: white;
+          font-size: 12px;
+          text-transform: capitalize;
+          .count-no {
+            background-color: white;
+            display: inline-block;
+            color: black;
+            width: 100%;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 2px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.header-bottom {
+  background-color: $nextBackgroundColor;
+
+  .drob-bottom {
+    border-right: 1px solid $BorderColor;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    .dropdown {
+      width: 100%;
+      .btn-success {
+        background-color: transparent;
+        border: none;
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        width: 100%;
+        text-align: left;
+        padding-left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .dropdown-menu {
+        background-color: $BackgorundColor;
+        transform: translate(0px, 40px) !important;
+        width: 100%;
+        a {
+          color: white;
+          font-size: $paragraphFontSize;
+          border-bottom: 1px solid $BorderColor;
+          line-height: 3;
+        }
+      }
+    }
+  }
+
+  .menu-links {
+    display: flex;
+    align-items: center;
+    a {
+      color: white;
+      text-transform: uppercase;
+      font-size: $paragraphFontSize;
+      display: block;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+    }
+  }
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+  background-color: transparent !important;
+  color: $OrBackground !important;
+}
+
+.btn-success.focus,
+.btn-success:focus {
+  box-shadow: none !important;
+  background-color: transparent !important;
+}
+
+////// Header Part End Here

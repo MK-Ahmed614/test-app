@@ -1,0 +1,44 @@
+@import "./variables/Variables.module.scss";
+@import "./variables/main-use_module.scss";
+
+.blog {
+  overflow: hidden;
+  box-shadow: $shadowBox;
+  border-radius: 6px;
+  background-color: white;
+  .image-blog {
+    width: 100%;
+    overflow: hidden;
+    height: 200px;
+    img {
+      height: 100%;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        transform: scale(1.1, 1.1);
+      }
+    }
+  }
+  .content-blog {
+    padding: 15px;
+    span {
+      font-size: 11px;
+      color: #777;
+    }
+    h4 {
+      font-size: 14px;
+      text-transform: capitalize;
+      margin: 10px 0;
+    }
+    p {
+      font-size: 11px;
+      color: #777;
+      text-transform: capitalize;
+    }
+    .btn-read {
+      @include creatBtn;
+      width: 90px;
+      height: 35px;
+      font-size: 12px;
+    }
+  }
+}

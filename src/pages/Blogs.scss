@@ -1,0 +1,45 @@
+@import "../components/variables/Variables.module.scss";
+
+.blogs-wrapper {
+  background-color: $whiteBackground;
+  padding: $mainPadding;
+  .fillter-card-blog {
+    background-color: white;
+    box-shadow: $shadowBox;
+    padding: 10px;
+    border-radius: 6px;
+    width: 100%;
+    text-transform: capitalize;
+    .title-card {
+      padding: 5px 0 15px;
+      h4 {
+        text-transform: capitalize;
+        font-size: 14px;
+        font-weight: 600;
+      }
+    }
+    .card-links-upper {
+      display: flex;
+      flex-direction: column;
+      a {
+        color: #888;
+        font-size: 13px;
+        margin: 5px 0;
+      }
+    }
+  }
+  .card-blog {
+    .col-6 {
+      margin-bottom: 30px;
+      .blog {
+        .image-blog {
+          height: 300px;
+          img {
+            width: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+}

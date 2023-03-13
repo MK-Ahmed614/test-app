@@ -1,0 +1,156 @@
+@import "../components/variables/Variables.module.scss";
+
+.checkOut-wrapper {
+  padding: $mainPadding;
+  .product-info {
+    .title {
+      text-transform: capitalize;
+      margin-bottom: 15px;
+    }
+    .dir-p {
+      text-transform: capitalize;
+      font-size: 13px;
+      color: #555;
+      word-spacing: 3px;
+    }
+    .contact-info {
+      text-transform: capitalize;
+      color: #444;
+    }
+    .e-m {
+      font-size: 13px;
+      color: #666;
+    }
+    .ch-ck {
+      margin-left: 5px;
+      text-transform: capitalize;
+      font-size: 13px;
+      color: #555;
+    }
+    .shipping-form {
+      padding: 30px 0 0;
+      h6 {
+        text-transform: capitalize;
+        color: #444;
+      }
+      input {
+        margin: 10px 0;
+        padding: 7px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        &::placeholder {
+          font-size: 13px;
+        }
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+    .btn-go {
+      .btn-cont {
+        background-color: #910000;
+        color: white;
+        cursor: pointer;
+        width: 200px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px;
+        font-size: 13px;
+        transition: all 0.2s ease-in-out;
+        text-transform: capitalize;
+        border: transparent;
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+  .sidebar-product {
+    width: 100%;
+    height: 100%;
+    background-color: #f1f1f1;
+    border-radius: 6px;
+    padding: 20px 20px;
+    .main-product {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      justify-content: space-between;
+      padding: 20px 0;
+      border-bottom: 1px solid #dfdfdf;
+      .product-img {
+        position: relative;
+        width: 13%;
+        border: 1px solid #dfdfdf;
+        border-radius: 6px;
+        .number-product {
+          position: absolute;
+          top: -8px;
+          right: 0;
+          border-radius: 50%;
+          background-color: #777;
+          width: 18px;
+          height: 18px;
+          display: flex;
+          font-size: 11px;
+          color: white;
+          align-items: center;
+          justify-content: center;
+        }
+        img {
+          width: 100%;
+          border-radius: 6px;
+        }
+      }
+      h6 {
+        font-size: 14px;
+        margin: 0;
+      }
+      span {
+        font-size: 11px;
+        color: #777;
+      }
+      p {
+        font-weight: 500;
+        font-size: 14px;
+      }
+    }
+    .totle-price {
+      display: flex;
+      align-items: start;
+      flex-direction: column;
+      padding: 20px 0;
+      border-bottom: 1px solid #dfdfdf;
+      div {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        p {
+          margin: 0;
+          text-transform: capitalize;
+          font-size: 13px;
+        }
+      }
+    }
+    .pro-price-totle {
+      display: flex;
+      padding: 20px 0;
+      align-items: center;
+      justify-content: space-between;
+      p {
+        text-transform: capitalize;
+        font-weight: 500;
+      }
+      h6 {
+        span {
+          color: #777;
+          text-transform: uppercase;
+          font-size: 11px;
+        }
+      }
+    }
+  }
+}

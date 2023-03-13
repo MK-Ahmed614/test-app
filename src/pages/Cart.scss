@@ -1,0 +1,126 @@
+@import "../components/variables/Variables.module.scss";
+
+.cart-wrapper {
+  background-color: $whiteBackground;
+  padding: $mainPadding;
+  .card-header {
+    padding: 10px 0;
+    background: none;
+    h4 {
+      text-transform: uppercase;
+      margin: 0;
+      font-size: 14px;
+      color: #555;
+    }
+  }
+  .cart-content {
+    padding: 50px 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    .about-product {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      justify-content: space-between;
+      .cart-img {
+        width: 25%;
+        img {
+          width: 100%;
+          border-radius: 6px;
+        }
+      }
+      .cart-description {
+        p {
+          margin: 10px 0;
+          color: #666;
+          font-size: 15px;
+          max-width: 90%;
+        }
+      }
+    }
+    h6 {
+      margin: 0;
+    }
+    input {
+      width: 60px;
+      margin-right: 20px;
+      height: 30px;
+      padding: 0 0 0 5px;
+      color: #777;
+      border: 1px solid #ddd;
+      font-size: 14px;
+      &:focus {
+        outline: none;
+      }
+    }
+    .delet-pro {
+      background-color: $BackgorundColor;
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+  }
+  .another-options-cart {
+    border-top: 1px solid #ddd;
+    .continue-shop {
+      padding: 30px 0;
+      a {
+        background-color: $BackgorundColor;
+        color: white;
+        cursor: pointer;
+        width: 180px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        font-size: 13px;
+        transition: all 0.2s ease-in-out;
+        text-transform: capitalize;
+        border: transparent;
+        &:hover {
+          background-color: $OrBackground;
+          color: #131921;
+        }
+      }
+    }
+    .check-out {
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      h6 {
+        color: #666;
+      }
+      p {
+        color: #666;
+        text-transform: capitalize;
+        font-size: 15px;
+      }
+      a {
+        background-color: $BackgorundColor;
+        color: white;
+        cursor: pointer;
+        width: 200px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        font-size: 13px;
+        transition: all 0.2s ease-in-out;
+        text-transform: capitalize;
+        border: transparent;
+        &:hover {
+          background-color: $OrBackground;
+          color: #131921;
+        }
+      }
+    }
+  }
+}

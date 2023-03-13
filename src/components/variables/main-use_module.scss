@@ -1,0 +1,29 @@
+@use "./Variables.module.scss";
+
+// button
+
+@mixin creatBtn {
+  background-color: $BackgorundColor;
+  color: white;
+  cursor: pointer;
+  width: 100px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  font-size: 13px;
+  transition: all 0.2s ease-in-out;
+  text-transform: capitalize;
+  border: transparent;
+  &:hover {
+    background-color: $OrBackground;
+    color: #131921;
+  }
+}
+
+@mixin headingTitle {
+  margin-bottom: 35px;
+  font-size: 22px;
+  text-transform: capitalize;
+}
